@@ -12,15 +12,17 @@
 
 // doSomethingWithCalback(exampleFunction);
 // doSomethingWithCalback(exampleFunctionTwo);
+//_________________
+
 
 // create callback Function which takes a function
 // as an argument
-// this cakk back function is whoisEatingCream(callbackFunction)
+// this call back function is whoisEatingICeCream(callbackFunction)
 
 // showName() // console.log // I am is eating ice cream
 
 function whoIsEatingIceCream(callbackFunction){
-    callbackFunction;
+    callbackFunction();
 }
 function showName(){
     console.log("hi i am eating ice cream");
