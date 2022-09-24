@@ -5,26 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
-    <script src="./js/script.js" defer></script>
+    <script type="module" src="./js/script.js" ></script>
 </head>
 <body>
-    <form class="bg-gray-500 flex flex-col p-8 m-8 birder rounder-md">
+    <div class="container mx-auto">
+        <form id="contact-form" class="bg-gray-300 flex flex-col p-8 m-8  border border-gray-900 gap-y-2 rounded-md w-80 mx-auto ">
+            <div class="flex flex-col" >
+                <label for="firstName" class="text-gray-600">
+                    First Name: (requierd)
+                </label>
+                <input
+                    id="firstName"
+                    class="rounded-md p-2"
+                    name="firstName" 
+                    type="text" 
+                    placeholder="Enter First Name">  
+                    <span id="firstNameError" class="text-red-500 text-sm py-2 hidden">Please your first name</span>
+            </div>
+            <div class="flex flex-col">
+                <label for="lastName"  class="text-gray-600">
+                    Last Name:  (Min 3 characters)
+                </label>
+                <input 
+                    id="lastName" 
+                    class="rounded-md p-2"
+                    name="lastName"
+                    type="text"
+                    placeholder="Enter Last Name">
 
-            <label for="firstName"> First Name</label>
-            
-
-                    <input id="firtName" name="lastName" type="text" placeholder="Enter firstname">
-
-                    <label for="lastName"> Last Name </label>
-
-                    <input id="lastName" name="lastName" type="text" placeholder="Enter lastName">
-
-                    <label for="email">Write your Email adress</label>
-
-                    <input id="email"  type="email" placeholder="Enter email">
-
-                    <button type="submit">submit</button>
-
-    </form>
+                    <span id="lastNameError" 
+                        class="text-red-500 text-sm py-2 hidden">
+                            Please your last name (min chars 3)</span>
+            </div>
+            <div class="flex flex-col">
+                <label for="email"  class="text-gray-600">
+                    Your Email:  (requierd)
+                </label>
+                <input 
+                    id="email"
+                    class="rounded-md p-2"
+                    name="email" 
+                    type="email" 
+                    placeholder="Enter Your Email">
+                    <span id="emailError" 
+                    class="text-red-500 text-sm py-2 hidden">
+                         Email requierd</span>
+            </div>
+            <button class="border border-gray-600 rounded-md bg-blue-600 text-white p-2 mt-4 uppercase" type="submit">Send</button>
+        
+        </form>
+    </div>
+    
 </body>
 </html>
