@@ -13,20 +13,20 @@ container.innerHTML += `<a href="index.html?firstName=${firstName}&lastName=${la
 
 // create anchor tag
 
-// const newLink = document.createElement("a");
-// console.log(newLink);
+const newLink = document.createElement("a");
+console.log(newLink);
 
 
-// newLink.href = `https://www.example.com/?firstName=${firstName}&lastName=${lastName}`;
-// console.log(newLink);
+newLink.href = `https://www.example.com/?firstName=${firstName}&lastName=${lastName}`;
+console.log(newLink);
 
 // add inner text to the anchor i created
-// newLink.textContent = "Submit"
-// console.log(newLink);
+newLink.textContent = "Submit"
+console.log(newLink);
 
 // add the new link to the container div
 
-//container.appendChild(newLink);
+container.appendChild(newLink);
 
 // console.log(window);
 // console.log(window.location);
