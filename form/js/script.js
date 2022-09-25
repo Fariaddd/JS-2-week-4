@@ -1,5 +1,4 @@
 import "/style.css";
-
 const contactForm = document.querySelector("#contact-form");
 const firstName = document.querySelector("#firstName");
 const firstNameError = document.querySelector("#firstNameError");
